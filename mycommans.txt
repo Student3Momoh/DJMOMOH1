@@ -1,0 +1,150 @@
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop
+$ cd DJMOMOH1
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1
+$ ls
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1
+$ git config --global user.name "DJMOMOH"
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1
+$ git config --global user.email djmomohp@gmail.com
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1
+$ git config --global --list
+user.name=DJMOMOH
+user.email=djmomohp@gmail.com
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1
+$ git init
+Initialized empty Git repository in C:/Users/UbuntuAfrika/Desktop/DJMOMOH1/.git/
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ touch file1.txt
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ ls
+file1.txt
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ echo "for i am JOhn" >> file1.txt
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ cat file1.txt
+for i am JOhn
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ git add file1.txt
+warning: in the working copy of 'file1.txt', LF will be replaced by CRLF the next time Git touches it
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ more file1.txt
+bash: more: command not found
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.txt
+
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ git commit -m "this is a test using commit"
+[master (root-commit) 1c380ea] this is a test using commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ git log
+commit 1c380eab7b94a251ba086a3af9e47d358d0c3f31 (HEAD -> master)
+Author: DJMOMOH <djmomohp@gmail.com>
+Date:   Thu Nov 23 14:15:26 2023 +0000
+
+    this is a test using commit
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ echo "Second git appen" >> file1.txt
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ git commit -m "2nd commit"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ git commit -m <2nd commit>
+bash: syntax error near unexpected token `newline'
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ git commit -m "2nd commit" >>
+bash: syntax error near unexpected token `newline'
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ git add file1.txt
+warning: in the working copy of 'file1.txt', LF will be replaced by CRLF the next time Git touches it
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file1.txt
+
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ git commit -m "2nd commit"
+[master 8c4353b] 2nd commit
+ 1 file changed, 1 insertion(+)
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$ git log
+commit 8c4353b46651de55007f36f5934cb68df2c5d5c4 (HEAD -> master)
+Author: DJMOMOH <djmomohp@gmail.com>
+Date:   Thu Nov 23 14:34:57 2023 +0000
+
+    2nd commit
+
+commit 1c380eab7b94a251ba086a3af9e47d358d0c3f31
+Author: DJMOMOH <djmomohp@gmail.com>
+Date:   Thu Nov 23 14:15:26 2023 +0000
+
+    this is a test using commit
+
+UbuntuAfrika@DESKTOP-PLN0HSE MINGW64 /c/users/ubuntuafrika/desktop/DJMOMOH1 (master)
+$
